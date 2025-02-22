@@ -7,18 +7,18 @@ pipeline {
         steps {
           echo 'building the application...'
         }
+      }
       stage("test"){
         steps{
           echo 'testing the application...'
         }
       }
-      stages("deploy"){
+      stage("deploy"){
           steps {
             echo 'deploying the application...'
           }
         }
-    }
-  }
+      }
 }
 
 node {
